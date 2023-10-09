@@ -7,6 +7,12 @@ public class DetectCollisionsX : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Destroy(gameObject);
+
+        if (other.CompareTag("Dog")) //If whilst falling the ball strikes the dog, remove
+        {
+            Debug.Log("Hit a dog");
+            Destroy(gameObject);
+        }
+
     }
 }
