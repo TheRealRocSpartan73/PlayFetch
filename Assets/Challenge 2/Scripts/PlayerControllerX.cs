@@ -25,7 +25,6 @@ public class PlayerControllerX : MonoBehaviour
         {
             Instantiate(dogPrefab, transform.position, dogPrefab.transform.rotation);//Spawn dog
             nextPress = Time.time + pressSpeed; //Reset time allowed to perform another press of key
-            Debug.Log("Farmer spawning Dog in " + nextPress);
             canSpawnDog = false;
         }
     }
